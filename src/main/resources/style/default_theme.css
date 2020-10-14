@@ -1,0 +1,110 @@
+{
+    black: #000000;
+    white: #ffffff;
+
+    yellow: #fff600;
+    yellow-transparent: rgba(255, 246, 0, 0.8);
+    yellow-light: #fffca3;
+
+    purple: rgba(86, 64, 100, 1);
+    purple-light: rgba(100, 80, 114, 1);
+    purple-transparent: rgba(86, 64, 100, 0.8);
+}
+
+.root {
+    -fx-background-image: url("bg-main.jpg");
+}
+
+.hyperlink {
+    -fx-text-fill: yellow;
+    -fx-border-color: transparent;
+}
+
+.button {
+    -fx-font: 12px Arial;
+    -fx-text-fill: black;
+    -fx-background-color: yellow-transparent;
+    -fx-background-radius: 0;
+}
+
+.button:hover {
+    -fx-background-color: yellow;
+}
+
+.button:pressed {
+    -fx-background-color: yellow-light;
+}
+
+
+.label {
+    -fx-font: 12px Arial;
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-font: 12px Arial;
+    -fx-text-fill: white;
+    -fx-background-color: rgba(255, 255, 255, .5);
+    -fx-background-radius: 15;
+    -fx-border-color: white;
+    -fx-border-radius: 15;
+}
+
+.slider {
+    -slider-filled-track-color: yellow;
+    -slider-track-color: purple-light;
+}
+
+.slider .thumb {
+    -fx-background-color: -slider-filled-track-color;
+}
+
+.slider .track {
+    -fx-background-color: -slider-track-color;
+}
+
+.slider .axis .axis-tick-mark {
+    -fx-fill: null;
+    -fx-stroke: yellow;
+}
+
+.slider .axis {
+    -fx-tick-label-fill: yellow;
+    -fx-tick-label-font-weight: bold;
+}
+
+#GameOfThronesButton {
+    -fx-font: 12px Arial;
+    -fx-text-fill: white;
+    -fx-background-color: purple-transparent;
+}
+
+#GameOfThronesButton:hover {
+    -fx-background-color: purple;
+}
+
+#GameOfThronesButton:pressed {
+    -fx-background-color: purple-light;
+}
+
+#ExceptionLabel {
+    -fx-font-weight: bold;
+}
+
+#txtUserInfo {
+    -fx-fill: white;
+}
+
+.statistical-text {
+    fx-fill: red;
+}
+
+
+#txtUserPortrait {
+    -fx-fill: yellow;
+    -fx-font-weight: bold;
+}
+
+#TitleText {
+    -fx-text-fill: white;
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lt.verbus.controller.fxml_controllers.QuizController">
+   <children>
+      <VBox id="UserInfoVBox" alignment="CENTER" prefHeight="157.0" prefWidth="600.0">
+         <children>
+            <Text fx:id="txtQuestionNumber" fill="#e8e8e8" strokeType="OUTSIDE" strokeWidth="0.0" text="Klausimas 1 iš 4" textAlignment="CENTER" wrappingWidth="500.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtQuestion" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." textAlignment="CENTER" wrappingWidth="549.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtQuestionNumber1" fill="#e8e8e8" layoutX="60.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tavo atsakymas:" textAlignment="CENTER" wrappingWidth="500.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="txtSliderIndicator" fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="YEAR" textAlignment="CENTER" wrappingWidth="500.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Slider fx:id="yearSlider" blockIncrement="1.0" majorTickUnit="10.0" max="2100.0" maxWidth="-Infinity" min="2020.0" minHeight="-Infinity" minWidth="-Infinity" minorTickCount="9" prefHeight="50.0" prefWidth="500.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="2060.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Slider>
+      <Button fx:id="btNextQuestion" mnemonicParsing="false" onAction="#btNextQuestionClicked" prefHeight="35.0" prefWidth="191.0" text="REGISTRUOTI ATSAKYMĄ" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="30.0" />
+   </padding>
+</VBox>
