@@ -15,6 +15,8 @@ import java.io.IOException;
 public class StageController {
 
     private static Stage primaryStage;
+    private final static String defaultTheme = "default_theme.css";
+    private final static String popUpTheme = "pop-up-theme.css";
 
     public static void setPrimaryStage(Stage stage) {
         primaryStage = stage;
@@ -27,23 +29,23 @@ public class StageController {
     }
 
     public static void loadWelcomeScreen() {
-        primaryStage.setScene(getStyledScene("welcome.fxml", "default_theme.css"));
+        primaryStage.setScene(getStyledScene("welcome.fxml", defaultTheme));
         primaryStage.setTitle("kuriTavo v1.0 - Registracija");
     }
 
     public static void loadQuizScreen() {
-        primaryStage.setScene(getStyledScene("quiz.fxml", "default_theme.css"));
+        primaryStage.setScene(getStyledScene("quiz.fxml", defaultTheme));
         primaryStage.setTitle("kuriTavo v1.0 - Klausimynas");
     }
 
     public static void loadResultScreen() {
-        primaryStage.setScene(getStyledScene("result.fxml", "default_theme.css"));
+        primaryStage.setScene(getStyledScene("result.fxml", defaultTheme));
         primaryStage.setTitle("kuriTavo v1.0 - Rezultatai");
     }
 
     public static void popUpQuestionReminder(Question question) {
         FXMLLoader loader = getLoader("remind_questions.fxml");
-        Scene scene = addStyleAndCreateScene(loader, "pop-up-theme.css");
+        Scene scene = addStyleAndCreateScene(loader, popUpTheme);
 
         RemindQuestionsController controller = loader.getController();
         controller.initData(question);
@@ -54,7 +56,7 @@ public class StageController {
     }
 
     public static void popUpQuestionRepositoryException() {
-        Scene scene = getStyledScene("question_repository_exception.fxml", "pop-up-theme.css");
+        Scene scene = getStyledScene("question_repository_exception.fxml", popUpTheme);
 
         Stage stage = createPopUpStage(scene);
         stage.setOnCloseRequest(e -> System.exit(1));
