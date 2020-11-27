@@ -78,7 +78,7 @@ The main Scenes of Stages are connected to FXML files. However, the “anonymous
 There are two centralized CSS files: one for main window and the other for pop-up windows. The custom - nested panels use their own - inline styles.
 4. **Lambdas.**
 Hibernate DAO results lots of repetitive boilerplate code with usually only one custom method call per DAO operation to set the proper persistence criteria. For this reason I saw a good use case for functional programming, so that all different DAO operations would call the same method, but would pass a unique criteria-setting-method as a parameter. 
-You can see the implementation of this logic in `UserDao` and `StatisticsDao` classes, and in `CriteriaCustomizer` acting as a functional interface for lambdas. You can also find some brief documentation block in UserDao at `createCustomQuery(..)` method.
+You can see the implementation of this logic in `UserDao` and `StatisticsDao` classes, and in `CriteriaCustomizer` acting as a functional interface for lambdas. You can also find some brief documentation block in `UserDao` at `createCustomQuery(..)` method.
 
 5. **Multithreading**
 When developing my application I quickly started noticing high latency on certain moments. I discovered that the reason was the hibernate Session opening process. Main Thread waits for the session opening to complete (it takes a few seconds) and only then proceeds. 
