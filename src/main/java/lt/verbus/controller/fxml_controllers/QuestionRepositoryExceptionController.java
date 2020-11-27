@@ -47,12 +47,7 @@ public class QuestionRepositoryExceptionController implements Initializable {
 
 
     public void cbApproveDeleteClicked() {
-        if (!cbApproveDelete.isSelected()) {
-            btDeleteStatistics.setDisable(true);
-        }
-        if (cbApproveDelete.isSelected()) {
-            btDeleteStatistics.setDisable(false);
-        }
+        btDeleteStatistics.setDisable(!cbApproveDelete.isSelected());
     }
 
 }
