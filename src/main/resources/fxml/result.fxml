@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lt.verbus.controller.fxml_controllers.ResultController">
+   <children>
+      <HBox fx:id="forLayout" prefHeight="150.0" prefWidth="600.0">
+         <children>
+            <VBox fx:id="vboxFeed" prefHeight="71.0" prefWidth="600.0" spacing="3.0">
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </VBox>
+         </children></HBox>
+      <HBox alignment="CENTER" prefHeight="32.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Text fx:id="txtUserInfo" strokeType="OUTSIDE" strokeWidth="0.0" text="User">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtUserPortrait" layoutX="293.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+         <VBox.margin>
+            <Insets top="-10.0" />
+         </VBox.margin>
+      </HBox>
+      <VBox fx:id="vboxFeedTitle" layoutX="10.0" layoutY="124.0" maxHeight="-Infinity" prefHeight="75.0" prefWidth="600.0" spacing="10.0">
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+         <VBox.margin>
+            <Insets top="-10.0" />
+         </VBox.margin>
+      </VBox>
+      <ScrollPane fx:id="scrollFeed" prefHeight="250.0" prefWidth="600.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#btNewClicked" prefHeight="25.0" prefWidth="153.0" text="Kartoti klausimyną" />
+            <Button layoutX="284.0" layoutY="12.0" mnemonicParsing="false" onAction="#btExitClicked" prefHeight="25.0" prefWidth="74.0" text="Išeiti" />
+         </children>
+         <VBox.margin>
+            <Insets top="-5.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

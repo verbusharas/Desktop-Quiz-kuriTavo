@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+    <config>
+        <show_users_statistic>1</show_users_statistic> <!-- 0 = false (not showing), 1 = true (showing) -->
+        <type_of_test>1</type_of_test> <!-- 0 = statistical by one user, 1 = average by all users -->
+        <realist_answer_range>16</realist_answer_range> <!-- plus and minus range of realistic portrait by average in percentage. Use only when type_of_test is 1 -->
+    </config>
+
+    <!-- You can write unlimited amount of questions -->
+    <question>
+        <text>
+            1981 IBM Ciuricho laboratorijoje buvo išrastas mikroskopas galintis atvaizduoti pavienius atomus, padaręs perversmą nanotechnologijų tyrimuose.
+            Kaip manote, kada medžiagas ne siųsime ir gausime, o masiškai gaminsime jungiant atomus?
+        </text>
+        <!-- write answer and answer_range if config.type_of_test is 0 -->
+        <answer>2025</answer>
+        <answer_range>0</answer_range>
+    </question>
+    <question>
+        <text>
+            1971 metais IBM išrado lankstųjį diskelį informacijos mainams tarp kompiuterių, kuomet dar internetas nebuvo paplitęs.
+            Kaip manote, kuomet informacija galėsime perduoti tiesiogiai iš žmogaus žmogui (telepatija)?
+        </text>
+        <answer>2033</answer>
+        <answer_range>0</answer_range>
+    </question>
+    <question>
+        <text>
+            2011 m. IBM dirbtinio intelekto sistema Watson nugalėjo savo varžovus klausimų-atsakimų šou "Jeopardy!" ir pasiėmė $1 mln. vertės prizą. Šiuo metu ši sistema pradedama taikyti priiminėjant sprendimus plaučių vėžio gydyme.
+            Kaip manote, kada pirminė medicinos apžiūra bus pilnai automatizuota?
+        </text>
+        <answer>2022</answer>
+        <answer_range>0</answer_range>
+    </question>
+    <question>
+        <text>
+            1956 m. IBM pristatė pirmą komercinį kietajį diską RAMAC 350.
+            Kaip manote, kada asmeniniai duomenys tilps į degtuko galvutės dydžio kristalą ir nebereiks saugoti duomenų Google, Dropbox ir kt.?
+        </text>
+        <answer>2022</answer>
+        <answer_range>0</answer_range>
+    </question>
+<!--    <question>-->
+<!--        <text>-->
+<!--            Naujas klausimas-->
+<!--        </text>-->
+<!--        <answer>2100</answer>-->
+<!--        <answer_range>0</answer_range>-->
+<!--    </question>-->
+</main>
