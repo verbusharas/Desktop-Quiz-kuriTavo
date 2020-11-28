@@ -27,10 +27,9 @@ public class User {
     private String country;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
-    private List<Answer> answers;
+    private List<Answer> answers = new ArrayList<>();
 
     public User() {
-        answers = new ArrayList<>();
     }
 
     public Integer getId() {
