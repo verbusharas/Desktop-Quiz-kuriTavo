@@ -39,12 +39,17 @@ public class InitializationThread extends Thread {
     }
 
     private void validateQuestions() {
-        List<User> users = userService.findAll();
-        if (users.get(0).getAnswers().size() != numberOfQuestions) {
-            Platform.runLater(() -> {
-                StageController.popUpQuestionRepositoryException();
-            });
+        try {
+            List<User> users = userService.findAll();
+            if (users.get(0).getAnswers().size() != numberOfQuestions) {
+                Platform.runLater(() -> {
+                    StageController.popUpQuestionRepositoryException();
+                });
+            }
+        } catch (NullPointerException e){
+            e.printStackTrace();
         }
+
     }
 
 }
