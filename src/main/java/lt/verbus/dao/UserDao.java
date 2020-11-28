@@ -87,8 +87,8 @@ public class UserDao implements CrudRepository<User> {
         } catch (Exception e) {
             if (transaction != null) {
                 transaction.rollback();
-                e.printStackTrace();
             }
+            e.printStackTrace();
         }
     }
 }
