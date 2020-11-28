@@ -1,10 +1,10 @@
 package lt.verbus.domain.model;
 
 public class Question {
-    int id;
-    String text;
-    String correctAnswer;
-    String allowedAnswerDeviationRange;
+    private int id;
+    private String text;
+    private String correctAnswer;
+    private String allowedAnswerDeviationRange;
 
     public Question() {
     }
